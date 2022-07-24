@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  nginx:
+    container_name: cripto-web
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ./:/var/www
+      - ./nginx/conf.d:/etc/nginx/conf.d/

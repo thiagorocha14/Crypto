@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Método Rail Fence</title>
+  <script type="module" src="/assets/js/railfence.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="railfence.html">Rail Fence</a></li>
+      <li><a href="substituicao.html">Substituição</a></li>
+      <li><a href="vigenere.html">Vigènere</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h3 class="title">Quantidade de quebras</h3>
+    <div class="top">
+      <input type="range" id="rangeQuantidade" value="2" min="2" max="20">
+      <input type="number" id="numberQuantidade" value="2">
+    </div>
+    <div class="container">
+      <div>
+        <h3>Texto para Criptografar</h3>
+        <textarea name="" id="textoRail" cols="30" rows="10"></textarea>
+        <button type="button" id="btnCriptografarRail">Criptografar</button>
+      </div>
+      <div>
+        <h3>Texto Criptografado</h3>
+        <textarea name="" id="textoCriptografadoRail" cols="30" rows="10"></textarea>
+        <button type="button" id="btnDescriptografarRail">Descriptografar</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
